@@ -20,4 +20,8 @@ public class QuestionService {
     public List<Question> getQuestionsbyCategory(String category) {
         return questionRepository.findByCategory(category);
     }
+
+    public Question saveQuestion(Question question) {
+        return questionRepository.save(question);
+    }
 }
